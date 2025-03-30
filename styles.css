@@ -22,7 +22,6 @@ body{
 }
 #reset{
     justify-self: center;
-    margin: 10px;
 }
 button{
     background: #f8f8f8;
@@ -30,8 +29,16 @@ button{
     width: 60px;
     aspect-ratio: 1 / 1;
     font-weight: 700;
-    color: #363636;
+    color: #ff894c;
+    border: 4px solid #dc2f2f;
+    text-align: center;
+    margin: 30px;
+    transition: transform 0.2s ease-out;
 }
 h1{
     color: #f8f8f8; 
+}
+button:hover{
+    background-color: #363636;
+    transform: translateY(-10px);
 }
