@@ -25,4 +25,20 @@ function resize(x=0){
     //rubbing the sketch
     document.querySelector("#reset").addEventListener("click",() => {boxes.forEach(box => {box.style.backgroundColor = ""})})
 }
+//resizing the container
 document.querySelector("#resize").addEventListener("click",() => resize())
+//making the toolbar options appear and disappear
+const options = document.querySelector("#options");
+const toolbar = document.querySelector("#toolbar");
+const triangle = document.querySelector(".clip-triangle")
+triangle.addEventListener("click", () => {
+    if (toolbar.style.maxWidth === "135px" && options.style.visibility === "visible") {
+        toolbar.style.maxWidth = "35px";
+        options.style.visibility = "hidden"
+        triangle.innerHTML = ">"
+    } else {
+        toolbar.style.maxWidth = "135px";
+        options.style.visibility = "visible" 
+        triangle.innerHTML = "<"
+    }
+});
