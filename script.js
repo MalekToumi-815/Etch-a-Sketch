@@ -42,3 +42,40 @@ triangle.addEventListener("click", () => {
         triangle.innerHTML = "<"
     }
 });
+//changing color
+document.querySelector("#red").addEventListener("click",() =>{
+    const boxes = document.querySelectorAll(".box")
+    boxes.forEach(box => {
+    box.addEventListener("mouseover",() => {box.style.backgroundColor = "red"})
+    })
+})
+document.querySelector("#black").addEventListener("click",() =>{
+    const boxes = document.querySelectorAll(".box")
+    boxes.forEach(box => {
+    box.addEventListener("mouseover",() => {box.style.backgroundColor = "black"})
+    })
+})
+document.querySelector("#yellow").addEventListener("click",() =>{
+    const boxes = document.querySelectorAll(".box")
+    boxes.forEach(box => {
+    box.addEventListener("mouseover",() => {box.style.backgroundColor = "yellow"})
+    })
+})
+document.querySelector("#purple").addEventListener("click",() =>{
+    const boxes = document.querySelectorAll(".box")
+    boxes.forEach(box => {
+    box.addEventListener("mouseover",() => {box.style.backgroundColor = "purple"})
+    })
+})
+document.querySelector("#green").addEventListener("click",() =>{
+    const boxes = document.querySelectorAll(".box")
+    boxes.forEach(box => {
+    box.addEventListener("mouseover",() => {box.style.backgroundColor = "green"})
+    })
+})
+document.querySelector("#eraser").addEventListener("click",() =>{
+    const boxes = document.querySelectorAll(".box")
+    boxes.forEach(box => {
+    box.addEventListener("mouseover",() => {box.style.backgroundColor = "white"})
+    })
+})
